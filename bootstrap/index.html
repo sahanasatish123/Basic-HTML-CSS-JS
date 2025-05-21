@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
+          
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Info">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#login">login</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="ms-3" >
+                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Notifications">
+                    <i class="bi bi-bell-fill"></i> <span class="badge text-bg-secondary">4</span>
+                  </button>
+              </div>
+        </div>
+       
+        </div>
+      </nav>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+<div class="offcanvas offcanvas-end"  data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <form action="">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+ 
+    <input type="email" class="form-control is-valid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+ 
+    <button class="btn btn-success">submit</button>
+  </form>
+  
+  </div>
+</div>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      
+      
+      <button class="btn btn-primary nest1">go in</button>
+      <button class="btn btn-primary nest2"> go further</button>
+
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        Enable cookies for a better experiance
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3" role="Notification">
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Notification</strong>
+            <small>just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+           Back Online
+          </div>
+        </div>
+      </div>
+      
+
+
+
+      <section id="home">
+        <div id="carouselExample" class="carousel slide"  data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pexels-matthew-montrone-230847-1324803.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide </h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="pexels-matthew-montrone-230847-1324803.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide </h5>
+                </div>
+              </div>
+            <div class="carousel-item">
+              <img src="pexels-matthew-montrone-230847-1324803.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide </h5>
+                </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+
+      
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+  <label class="form-check-label" for="switchCheckChecked">Checked switch checkbox input</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+  <label class="form-check-label" for="radioDefault1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+  <label class="form-check-label" for="radioDefault2">
+    Default checked radio
+  </label>
+</div>
+
+<button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+<button type="button" class="btn" data-bs-toggle="button" disabled> disabled Toggle button</button>
+
+     <section id="products">
+      <div class="container mt-5">
+        <h2>Products</h2>
+        <!-- Page 1 Cards -->
+        <div id="page1" class="card-page collapse show">
+          <div class="row g-4">
+            <div class="col-12">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+                      <img src="pexels-matthew-montrone-230847-1324803.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Product Image">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum libero nulla eaque ipsa aperiam quibusdam porro provident cumque facere officiis repellendus nemo exercitationem, ullam est obcaecati quae quia. Tempore, minima.</p>
+                        <a href="#" class="btn btn-primary" id="loginBtn">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+                      <img src="pexels-matthew-montrone-230847-1324803.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Product Image">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum libero nulla eaque ipsa aperiam quibusdam porro provident cumque facere officiis repellendus nemo exercitationem, ullam est obcaecati quae quia. Tempore, minima.</p>
+                        <a href="#" class="btn btn-primary" id="loginBtn">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Add more cards for Page 1 here -->
+          </div>
+        </div>
+      
+        <!-- Page 2 Cards -->
+        <div id="page2" class="card-page collapse">
+          <div class="row g-4">
+            <div class="col-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <img src="pexels-matthew-montrone-230847-1324803.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Product 2">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 3</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quis eos dolore aperiam nesciunt corporis aliquam ab voluptas, est nostrum distinctio ipsam tenetur sed, soluta voluptatibus saepe ratione vitae nulla!</p>
+                      <a href="#" class="btn btn-primary" id="loginBtn">Go somewhere</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+                      <img src="pexels-matthew-montrone-230847-1324803.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Product Image">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title">Product 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum libero nulla eaque ipsa aperiam quibusdam porro provident cumque facere officiis repellendus nemo exercitationem, ullam est obcaecati quae quia. Tempore, minima.</p>
+                        <a href="#" class="btn btn-primary" id="loginBtn">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-4">
+          
+          <li class="page-item " id="btnPage1">
+            <a class="page-link" href="#page1"  data-bs-target="#page1,#page2" data-bs-toggle="collapse">1</a>
+          </li>
+          <li class="page-item" id="btnPage2">
+            <a class="page-link" href="#page2"  data-bs-target="#page1,#page2" data-bs-toggle="collapse">2</a>
+         
+          
+        </ul>
+      </nav>
+      
+     
+     </section>
+      
+      <!-- Knew more -->
+       <section id="Info">
+        <h3 class="ms-3">Know more</h3>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      
+      <!-- login form -->
+    <section id="login">
+      <form class="container mt-3">
+        <h3>LOGIN</h3>
+        <div class="row">
+
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="password should contain atleast 1 special character">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Country</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">India</option>
+            <option value="2">UK</option>
+            <option value="3">USA</option>
+          </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="file" class="form-control" id="inputGroupFile02">
+          <label class="input-group-text" for="inputGroupFile02">Upload</label>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">I Agree</label>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+      </form>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">    FREE COINS!!!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              30 coins for your first login
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+      let nest1=document.querySelector(".nest1")
+      let list=document.querySelector(".breadcrumb")
+      let nest2=document.querySelector(".nest2")
+
+      nest1.addEventListener("click",()=>{
+        let newitem=document.createElement("li")
+        newitem.classList.add("breadcrumb-item");
+        newitem.innerHTML = `<a href="#">nest1</a>`;
+        nest1.style.display="none"
+        list.append(newitem)
+      })
+
+      nest2.addEventListener("click",()=>{
+        let newitem=document.createElement("li")
+        newitem.classList.add("breadcrumb-item");
+  newitem.innerHTML = `<a href="#">nest1</a>`;
+  nest2.style.display="none"
+  list.append(newitem)
+      })
+
+      // function showPage(pageNumber) {
+      //   document.querySelectorAll('.card-page').forEach(page => page.classList.add('d-none'));
+      //   document.getElementById('page' + pageNumber).classList.remove('d-none');
+    
+      //   document.querySelectorAll('.page-item').forEach(item => item.classList.remove('active'));
+      //   document.getElementById('btnPage' + pageNumber).classList.add('active');
+    
+      //   // Optionally enable/disable Previous/Next
+      //   document.getElementById('prevPage').classList.toggle('disabled', pageNumber === 1);
+      //   document.getElementById('nextPage').classList.toggle('disabled', pageNumber === 2);
+      // }
+// Scroll to login section if needed
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+  </body>
+</html>
